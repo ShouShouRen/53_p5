@@ -3,7 +3,7 @@
   require_once("pdo.php");
   extract($_POST);
   if(!isset($_SESSION["AUTH"])){
-    header("Location:logout.php");
+    header("Location: login.php");
   }
 ?>
 <!DOCTYPE html>
