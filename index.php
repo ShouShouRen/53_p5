@@ -63,53 +63,53 @@
       <div class="col-6 d-flex h-380">
         <div class="col-6 h-100 bg-back p-3 text-center text-light">
           <img src="./images/<?=$row["images"]?>" class="w-100 h-75" alt="">
-          <div class="bg-2 w-100 h-20 mt-1 py-3">相關連結</div>
+          <div class="bg-2 w-100 h-20 mt-1 py-3">相關連結:<a href="<?=$row["links"]?>"><?=$row["links"]?></a></div>
         </div>
         <div class="col-6 h-100 bg-back p-3 text-center text-light">
-          <div class="bg-1 w-100 h-20 mt-1 py-3">商品名稱</div>
-          <div class="bg-2 w-100 h-30 mt-1 py-4">商品簡介</div>
-          <div class="bg-3 w-100 h-20 mt-1 py-3">發布日期</div>
-          <div class="bg-1 w-100 h-20 mt-1 py-3">費用</div>
+          <div class="bg-1 w-100 h-20 mt-1 py-3">商品名稱:<?=$row["product_name"]?></div>
+          <div class="bg-2 w-100 h-30 mt-1 py-4">商品簡介:<?=$row["product_des"]?></div>
+          <div class="bg-3 w-100 h-20 mt-1 py-3">發布日期:<?=$row["time"]?></div>
+          <div class="bg-1 w-100 h-20 mt-1 py-3">費用:<?=$row["price"]?></div>
         </div>
       </div>
       <?php } else if($row["template"] == 2) {?>
 
       <div class="col-6 d-flex h-380">
         <div class="col-6 h-100 bg-back p-3 text-center text-light">
-          <img src="<?=$row["images"]?>" class="w-100 h-75" alt="">
-          <div class="bg-2 w-100 h-20 mt-1 py-3">相關連結</div>
+          <img src="./images/<?=$row["images"]?>" class="w-100 h-75" alt="">
+          <div class="bg-2 w-100 h-20 mt-1 py-3">相關連結:<a href="<?=$row["links"]?>"><?=$row["links"]?></a></div>
         </div>
         <div class="col-6 h-100 bg-back p-3 text-center text-light">
-          <div class="bg-1 w-100 h-20 mt-1 py-3">商品名稱</div>
-          <div class="bg-2 w-100 h-30 mt-1 py-4">商品簡介</div>
-          <div class="bg-3 w-100 h-20 mt-1 py-3">發布日期</div>
-          <div class="bg-1 w-100 h-20 mt-1 py-3">費用</div>
+          <div class="bg-1 w-100 h-20 mt-1 py-3">商品名稱:<?=$row["product_name"]?></div>
+          <div class="bg-2 w-100 h-30 mt-1 py-4">商品簡介:<?=$row["product_des"]?></div>
+          <div class="bg-3 w-100 h-20 mt-1 py-3">發布日期:<?=$row["time"]?></div>
+          <div class="bg-1 w-100 h-20 mt-1 py-3">費用:<?=$row["price"]?></div>
         </div>
       </div>
       <?php } else if($row["template"] == 3) {?>
       <div class="col-6 d-flex h-380">
         <div class="col-6 h-100 bg-back p-3 text-center text-light">
-          <img src="<?=$row["images"]?>" class="w-100 h-75" alt="">
-          <div class="bg-2 w-100 h-20 mt-1 py-3">相關連結</div>
+          <img src="./images/<?=$row["images"]?>" class="w-100 h-75" alt="">
+          <div class="bg-2 w-100 h-20 mt-1 py-3">相關連結:<a href="<?=$row["links"]?>"><?=$row["links"]?></a></div>
         </div>
         <div class="col-6 h-100 bg-back p-3 text-center text-light">
-          <div class="bg-1 w-100 h-20 mt-1 py-3">商品名稱</div>
-          <div class="bg-2 w-100 h-30 mt-1 py-4">商品簡介</div>
-          <div class="bg-3 w-100 h-20 mt-1 py-3">發布日期</div>
-          <div class="bg-1 w-100 h-20 mt-1 py-3">費用</div>
+          <div class="bg-1 w-100 h-20 mt-1 py-3">商品名稱:<?=$row["product_name"]?></div>
+          <div class="bg-2 w-100 h-30 mt-1 py-4">商品簡介:<?=$row["product_des"]?></div>
+          <div class="bg-3 w-100 h-20 mt-1 py-3">發布日期:<?=$row["time"]?></div>
+          <div class="bg-1 w-100 h-20 mt-1 py-3">費用:<?=$row["price"]?></div>
         </div>
       </div>
       <?php } else if($row["template"] == 4) {?>
       <div class="col-6 d-flex h-380">
         <div class="col-6 h-100 bg-back p-3 text-center text-light">
-          <img src="<?=$row["images"]?>" class="w-100 h-75" alt="">
-          <div class="bg-2 w-100 h-20 mt-1 py-3">相關連結</div>
+          <img src="./images/<?=$row["images"]?>" class="w-100 h-75" alt="">
+          <div class="bg-2 w-100 h-20 mt-1 py-3">相關連結:<a href="<?=$row["links"]?>"><?=$row["links"]?></a></div>
         </div>
         <div class="col-6 h-100 bg-back p-3 text-center text-light">
-          <div class="bg-1 w-100 h-20 mt-1 py-3">商品名稱</div>
-          <div class="bg-2 w-100 h-30 mt-1 py-4">商品簡介</div>
-          <div class="bg-3 w-100 h-20 mt-1 py-3">發布日期</div>
-          <div class="bg-1 w-100 h-20 mt-1 py-3">費用</div>
+          <div class="bg-1 w-100 h-20 mt-1 py-3">商品名稱:<?=$row["product_name"]?></div>
+          <div class="bg-2 w-100 h-30 mt-1 py-4">商品簡介:<?=$row["product_des"]?></div>
+          <div class="bg-3 w-100 h-20 mt-1 py-3">發布日期:<?=$row["time"]?></div>
+          <div class="bg-1 w-100 h-20 mt-1 py-3">費用:<?=$row["price"]?></div>
         </div>
       </div>
       <?php }?>
