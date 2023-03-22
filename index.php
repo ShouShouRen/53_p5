@@ -60,60 +60,164 @@
     <div class="row justify-content-start mt-4 flex-wrap" id="search-results">
       <?php foreach($result as $row) {?>
       <?php if($row["template"] == 1) {?>
-      <div class="col-6 d-flex h-380">
-        <div class="col-6 h-100 bg-back p-3 text-center text-light">
-          <img src="./images/<?=$row["images"]?>" class="w-100 h-75" alt="">
-          <div class="bg-2 w-100 h-20 mt-1 py-3">相關連結:<a href="<?=$row["links"]?>"><?=$row["links"]?></a></div>
-        </div>
-        <div class="col-6 h-100 bg-back p-3 text-center text-light">
-          <div class="bg-1 w-100 h-20 mt-1 py-3">商品名稱:<?=$row["product_name"]?></div>
-          <div class="bg-2 w-100 h-30 mt-1 py-4">商品簡介:<?=$row["product_des"]?></div>
-          <div class="bg-3 w-100 h-20 mt-1 py-3">發布日期:<?=$row["time"]?></div>
-          <div class="bg-1 w-100 h-20 mt-1 py-3">費用:<?=$row["price"]?></div>
+      <div class="col-6 h-380">
+        <div class="d-flex text-center bg-back px-2 py-3 flex-wrap">
+          <div class="col-6">
+            <img src="./images/<?= $row["images"]; ?>" class="w-100" style="height: 225px" alt="">
+            <div class="bg-2 w-100 h-20 mt-1 py-3 text-center text-light">相關連結:<a
+                href="<?= $row["links"]; ?>"><?= $row["links"]; ?></a></div>
+          </div>
+          <div class="col-6">
+            <div class="bg-1 w-100 h-20 mt-1 py-3 text-center text-light">
+              商品名稱:<?= $row["product_name"]; ?></div>
+            <div class="bg-2 w-100 h-30 mt-1 py-4 text-center text-light">
+              商品簡介:<?= $row["product_des"]; ?></div>
+            <div class="bg-3 w-100 h-20 mt-1 py-3 text-center text-light">
+              發布日期:<?= $row["time"]; ?></div>
+            <div class="bg-1 w-100 h-20 mt-1 py-3 text-center text-light">
+              費用:<?= $row["price"]; ?> 元</div>
+          </div>
+          <div class="col-12 mt-2">
+            <?php
+                  if ($_SESSION["AUTH"]["role"] == 0) {
+                      echo "<button class='btn btn-secondary btn-sm getproduct' data-toggle='modal' data-id='" . $row['id'] . "' data-target='#edit-product'>編輯</button>";
+                  }
+                ?>
+          </div>
         </div>
       </div>
       <?php } else if($row["template"] == 2) {?>
-
-      <div class="col-6 d-flex h-380">
-        <div class="col-6 h-100 bg-back p-3 text-center text-light">
-          <img src="./images/<?=$row["images"]?>" class="w-100 h-75" alt="">
-          <div class="bg-2 w-100 h-20 mt-1 py-3">相關連結:<a href="<?=$row["links"]?>"><?=$row["links"]?></a></div>
-        </div>
-        <div class="col-6 h-100 bg-back p-3 text-center text-light">
-          <div class="bg-1 w-100 h-20 mt-1 py-3">商品名稱:<?=$row["product_name"]?></div>
-          <div class="bg-2 w-100 h-30 mt-1 py-4">商品簡介:<?=$row["product_des"]?></div>
-          <div class="bg-3 w-100 h-20 mt-1 py-3">發布日期:<?=$row["time"]?></div>
-          <div class="bg-1 w-100 h-20 mt-1 py-3">費用:<?=$row["price"]?></div>
+      <div class="col-6 h-380">
+        <div class="d-flex text-center bg-back px-2 py-3 flex-wrap">
+          <div class="col-6">
+            <div class="bg-1 w-100 h-20 mb-1 py-3 text-center text-light">
+              商品名稱:<?= $row["product_name"]; ?></div>
+            <img src="./images/<?= $row["images"]; ?>" class="w-100" style="height: 225px" alt="">
+          </div>
+          <div class="col-6">
+            <div class="bg-1 w-100 h-20 mt-1 py-3 text-center text-light">
+              費用:<?= $row["price"]; ?> 元</div>
+            <div class="bg-2 w-100 h-30 mt-1 py-4 text-center text-light">
+              商品簡介:<?= $row["product_des"]; ?></div>
+            <div class="bg-3 w-100 h-20 mt-1 py-3 text-center text-light">
+              發布日期:<?= $row["time"]; ?></div>
+            <div class="bg-2 w-100 h-20 mt-1 py-3 text-center text-light">相關連結:<a
+                href="<?= $row["links"]; ?>"><?= $row["links"]; ?></a></div>
+          </div>
+          <div class="col-12 mt-2">
+            <?php
+                  if ($_SESSION["AUTH"]["role"] == 0) {
+                      echo "<button class='btn btn-secondary btn-sm getproduct' data-toggle='modal' data-id='" . $row['id'] . "' data-target='#edit-product'>編輯</button>";
+                  }
+                ?>
+          </div>
         </div>
       </div>
       <?php } else if($row["template"] == 3) {?>
-      <div class="col-6 d-flex h-380">
-        <div class="col-6 h-100 bg-back p-3 text-center text-light">
-          <img src="./images/<?=$row["images"]?>" class="w-100 h-75" alt="">
-          <div class="bg-2 w-100 h-20 mt-1 py-3">相關連結:<a href="<?=$row["links"]?>"><?=$row["links"]?></a></div>
-        </div>
-        <div class="col-6 h-100 bg-back p-3 text-center text-light">
-          <div class="bg-1 w-100 h-20 mt-1 py-3">商品名稱:<?=$row["product_name"]?></div>
-          <div class="bg-2 w-100 h-30 mt-1 py-4">商品簡介:<?=$row["product_des"]?></div>
-          <div class="bg-3 w-100 h-20 mt-1 py-3">發布日期:<?=$row["time"]?></div>
-          <div class="bg-1 w-100 h-20 mt-1 py-3">費用:<?=$row["price"]?></div>
+      <div class="col-6 h-380">
+        <div class="d-flex text-center bg-back px-2 py-3 flex-wrap">
+          <div class="col-6">
+            <div class="bg-1 w-100 h-20 mt-1 py-3 text-center text-light">
+              商品名稱:<?= $row["product_name"]; ?></div>
+            <div class="bg-2 w-100 h-30 mt-1 py-4 text-center text-light">
+              商品簡介:<?= $row["product_des"]; ?></div>
+            <div class="bg-3 w-100 h-20 mt-1 py-3 text-center text-light">
+              發布日期:<?= $row["time"]; ?></div>
+            <div class="bg-1 w-100 h-20 mt-1 py-3 text-center text-light">
+              費用:<?= $row["price"]; ?> 元</div>
+          </div>
+          <div class="col-6">
+            <img src="./images/<?= $row["images"]; ?>" class="w-100" style="height: 225px" alt="">
+            <div class="bg-2 w-100 h-20 mt-1 py-3 text-center text-light">相關連結:<a
+                href="<?= $row["links"]; ?>"><?= $row["links"]; ?></a></div>
+          </div>
+          <div class="col-12 mt-2">
+            <?php
+                  if ($_SESSION["AUTH"]["role"] == 0) {
+                      echo "<button class='btn btn-secondary btn-sm getproduct' data-toggle='modal' data-id='" . $row['id'] . "' data-target='#edit-product'>編輯</button>";
+                  }
+                ?>
+          </div>
         </div>
       </div>
       <?php } else if($row["template"] == 4) {?>
-      <div class="col-6 d-flex h-380">
-        <div class="col-6 h-100 bg-back p-3 text-center text-light">
-          <img src="./images/<?=$row["images"]?>" class="w-100 h-75" alt="">
-          <div class="bg-2 w-100 h-20 mt-1 py-3">相關連結:<a href="<?=$row["links"]?>"><?=$row["links"]?></a></div>
-        </div>
-        <div class="col-6 h-100 bg-back p-3 text-center text-light">
-          <div class="bg-1 w-100 h-20 mt-1 py-3">商品名稱:<?=$row["product_name"]?></div>
-          <div class="bg-2 w-100 h-30 mt-1 py-4">商品簡介:<?=$row["product_des"]?></div>
-          <div class="bg-3 w-100 h-20 mt-1 py-3">發布日期:<?=$row["time"]?></div>
-          <div class="bg-1 w-100 h-20 mt-1 py-3">費用:<?=$row["price"]?></div>
+      <div class="col-6 h-380">
+        <div class="d-flex text-center bg-back px-2 py-3 flex-wrap">
+          <div class="col-6">
+            <div class="bg-1 w-100 h-20 mb-1 py-3 text-center text-light">
+              商品名稱:<?= $row["product_name"]; ?></div>
+            <img src="./images/<?= $row["images"]; ?>" class="w-100" style="height: 225px" alt="">
+          </div>
+          <div class="col-6">
+            <div class="bg-1 w-100 h-20 mt-1 py-3 text-center text-light">
+              費用:<?= $row["price"]; ?> 元</div>
+            <div class="bg-2 w-100 h-30 mt-1 py-4 text-center text-light">
+              商品簡介:<?= $row["product_des"]; ?></div>
+            <div class="bg-3 w-100 h-20 mt-1 py-3 text-center text-light">
+              發布日期:<?= $row["time"]; ?></div>
+            <div class="bg-2 w-100 h-20 mt-1 py-3 text-center text-light">相關連結:<a
+                href="<?= $row["links"]; ?>"><?= $row["links"]; ?></a></div>
+          </div>
+          <div class="col-12 mt-2">
+            <?php
+                  if ($_SESSION["AUTH"]["role"] == 0) {
+                      echo "<button class='btn btn-secondary btn-sm getproduct' data-toggle='modal' data-id='" . $row['id'] . "' data-target='#edit-product'>編輯</button>";
+                  }
+                ?>
+          </div>
         </div>
       </div>
       <?php }?>
       <?php }?>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="edit-product">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">修改產品</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form enctype="multipart/form-data">
+              <div class="d-flex justify-content-between my-3">
+                <label for="">商品標題:</label>
+                <input type="text" class="form-control w-75" name="product_name" id="product_name">
+              </div>
+              <div class="d-flex justify-content-between my-3">
+                <label for="">商品介紹:</label>
+                <input type="text" class="form-control w-75" name="product_des" id="product_des">
+              </div>
+              <div class="d-flex justify-content-between my-3">
+                <label for="">發布日期:</label>
+                <input type="datetime-local" name="time" class="form-control w-75" id="time" value="<?=$now?>">
+              </div>
+              <div class="d-flex justify-content-between my-3">
+                <label for="">當前圖片:</label>
+                <img id="current-image" class="w-25" src="" alt="">
+              </div>
+              <div class="d-flex justify-content-between my-3">
+                <label for="">上傳圖片:</label>
+                <input type="file" name="images" id="images">
+              </div>
+              <div class="d-flex justify-content-between my-3">
+                <label for="">費用:</label>
+                <input type="text" class="form-control w-75" id="price" name="price">
+              </div>
+              <div class="d-flex justify-content-between my-3">
+                <label for="">相關連結:</label>
+                <input type="text" class="form-control w-75" id="links" name="links">
+              </div>
+              <div class="text-right my-3">
+                <input type="submit" class="btn btn-success saveproduct" value="儲存">
+              </div>
+          </div>
+          <input type="hidden" name="id" id="id">
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </body>

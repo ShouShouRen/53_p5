@@ -78,16 +78,16 @@
               </div>
               <div class="col-6 d-flex h-380">
                 <div class="col-6 h-100 bg-back p-3 text-center text-light">
+                  <div class="bg-1 w-100 h-20 mb-1 py-3">商品名稱</div>
                   <div class="bg-1 w-100 h-75 d-flex justify-content-center align-items-center">
                     <p>圖片</p>
                   </div>
-                  <div class="bg-2 w-100 h-20 mt-1 py-3">相關連結</div>
                 </div>
                 <div class="col-6 h-100 bg-back p-3 text-center text-light">
-                  <div class="bg-1 w-100 h-20 mt-1 py-3">商品名稱</div>
+                  <div class="bg-1 w-100 h-20 mt-1 py-3">費用</div>
                   <div class="bg-2 w-100 h-30 mt-1 py-4">商品簡介</div>
                   <div class="bg-3 w-100 h-20 mt-1 py-3">發布日期</div>
-                  <div class="bg-1 w-100 h-20 mt-1 py-3">費用</div>
+                  <div class="bg-2 w-100 h-20 mt-1 py-3">相關連結</div>
                 </div>
               </div>
             </div>
@@ -104,30 +104,30 @@
             <div class="row py-3">
               <div class="col-6 d-flex h-380">
                 <div class="col-6 h-100 bg-back p-3 text-center text-light">
-                  <div class="bg-1 w-100 h-75 d-flex justify-content-center align-items-center">
-                    <p>圖片</p>
-                  </div>
-                  <div class="bg-2 w-100 h-20 mt-1 py-3">相關連結</div>
-                </div>
-                <div class="col-6 h-100 bg-back p-3 text-center text-light">
                   <div class="bg-1 w-100 h-20 mt-1 py-3">商品名稱</div>
                   <div class="bg-2 w-100 h-30 mt-1 py-4">商品簡介</div>
                   <div class="bg-3 w-100 h-20 mt-1 py-3">發布日期</div>
                   <div class="bg-1 w-100 h-20 mt-1 py-3">費用</div>
+                </div>
+                <div class="col-6 h-100 bg-back p-3 text-center text-light">
+                  <div class="bg-1 w-100 h-75 d-flex justify-content-center align-items-center">
+                    <p>圖片</p>
+                  </div>
+                  <div class="bg-2 w-100 h-20 mt-1 py-3">相關連結</div>
                 </div>
               </div>
               <div class="col-6 d-flex h-380">
                 <div class="col-6 h-100 bg-back p-3 text-center text-light">
-                  <div class="bg-1 w-100 h-75 d-flex justify-content-center align-items-center">
-                    <p>圖片</p>
-                  </div>
+                  <div class="bg-1 w-100 h-20 mt-1 py-3">費用</div>
+                  <div class="bg-2 w-100 h-30 mt-1 py-4">商品簡介</div>
+                  <div class="bg-3 w-100 h-20 mt-1 py-3">發布日期</div>
                   <div class="bg-2 w-100 h-20 mt-1 py-3">相關連結</div>
                 </div>
                 <div class="col-6 h-100 bg-back p-3 text-center text-light">
-                  <div class="bg-1 w-100 h-20 mt-1 py-3">商品名稱</div>
-                  <div class="bg-2 w-100 h-30 mt-1 py-4">商品簡介</div>
-                  <div class="bg-3 w-100 h-20 mt-1 py-3">發布日期</div>
-                  <div class="bg-1 w-100 h-20 mt-1 py-3">費用</div>
+                  <div class="bg-1 w-100 h-20 mb-1 py-3">商品名稱</div>
+                  <div class="bg-1 w-100 h-75 d-flex justify-content-center align-items-center">
+                    <p>圖片</p>
+                  </div>
                 </div>
               </div>
             </div>
