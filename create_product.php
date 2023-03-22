@@ -143,24 +143,34 @@
             </div>
           </div>
           <div class="tab-pane fade" id="input">
-            <div class="d-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-center">
               <div class="col-8">
-                <h3 class="py-4 text-center">填寫資料</h3>
-                <div class="my-3 d-flex justify-content-center align-items-center">
-                  <label for="">商品標題:</label>
-                  <input type="text" class="form-control w-50 ml-2" name="product_name">
-                </div>
-                <div class="my-3 d-flex justify-content-center align-items-center">
-                  <label for="">商品標題:</label>
-                  <input type="text" class="form-control w-50 ml-2" name="product_name">
-                </div>
-                <div class="my-3 d-flex justify-content-center align-items-center">
-                  <label for="">商品標題:</label>
-                  <input type="text" class="form-control w-50 ml-2" name="product_name">
-                </div>
-                <div class="my-3 d-flex justify-content-center align-items-center">
-                  <label for="">商品標題:</label>
-                  <input type="text" class="form-control w-50 ml-2" name="product_name">
+                <div class="bg-white p-4 rounded-lg">
+                  <h4 class="text-center my-5">填寫資料</h4>
+                  <div class="d-flex justify-content-between align-items-center my-3">
+                    <label for="">商品名稱:</label>
+                    <input type="text" class="w-75 form-control" name="product_name" require>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center my-3">
+                    <label for="">商品描述:</label>
+                    <textarea name="product_des" class="w-75 form-control"></textarea>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center my-3">
+                    <label for="">發布日期:</label>
+                    <input type="datetime-local" name="time" class="w-75 form-control" value="<?=$now?>" require>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center my-3">
+                    <label for="">商品圖片:</label>
+                    <input type="file" class="w-75" name="images">
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center my-3">
+                    <label for="">商品價格:</label>
+                    <input type="text" class="w-75 form-control" name="price" require>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center my-3">
+                    <label for="">商品連結:</label>
+                    <input type="text" class="w-75 form-control" name="links" require>
+                  </div>
                 </div>
               </div>
             </div>
@@ -183,5 +193,6 @@
 <script src="./js/jquery.min.js"></script>
 <script src="./js/bootstrap.js"></script>
 <script src="./js/script.js"></script>
+<script src="./js/template.js"></script>
 
 </html>
